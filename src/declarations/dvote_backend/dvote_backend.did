@@ -1,0 +1,6 @@
+service : {
+  castVote: (text, text) -> (bool);
+  getResults: () -> (text);
+  loginUser: (text, text) -> (bool);
+  registerUser: (text, text) -> (bool);
+}

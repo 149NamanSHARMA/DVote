@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DVote - Decentralized Voting Application</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<script defer src="index.js"></script></head>
+<body>
+    <div id="container">
+        <img id="logo" src="logo-white.svg" alt="DVote Logo">
+        <div id="registration-form">
+            <h3>Create your new account</h3>
+            <input type="text" id="register-username" placeholder="Username">
+            <input type="password" id="register-password" placeholder="Password">
+            <button id="register-button">Register</button>
+            <p id="register-status"></p>
+        </div>
+
+        <div id="login-form">
+            <h3>Login to vote for your favorites!</h3>
+            <input type="text" id="login-username" placeholder="Username">
+            <input type="password" id="login-password" placeholder="Password">
+            <button id="login-button">Login</button>
+            <p id="login-status"></p>
+        </div>
+
+        <div id="vote-form">
+            <h2>Cast Your Vote</h2>
+            <input type="radio" id="party-a" name="party" value="The Satoshi Faction" hidden>
+            <label for="party-a" class="party-label">
+                <img src="satoshi-logo.webp" alt="The Satoshi Faction" class="party-logo">
+                <span>The Satoshi Faction</span>
+            </label><br>
+
+            <input type="radio" id="party-b" name="party" value="The Ether Union" hidden>
+            <label for="party-b" class="party-label">
+                <img src="ether-logo.webp" alt="The Ether Union" class="party-logo">
+                <span>The Ether Union</span>
+            </label><br>
+            <!-- <input type="radio" id="party-a" name="party" value="Party A">
+            <label for="party-a">Party A</label><br>
+            <input type="radio" id="party-b" name="party" value="Party B">
+            <label for="party-b">Party B</label><br> -->
+            <button id="vote-button">Cast Vote</button>
+            <p id="vote-status"></p>
+        </div>
+
+        <button id="logout-button" style="display:none;">Logout</button>
+
+        <!-- <button id="end-election-button">End Election and Show Results</button> -->
+
+        <div id="timer-display">
+            <h2>Election Timer</h2>
+            <h3 id="timer-text">Election ends in: <span id="timer">05:00</span> minutes</h3>
+        </div>
+
+        <div id="results-display" style="display: none;">
+            <h2>Election Results</h2>
+            <img src="satoshi-logo.webp" alt="The Satoshi Faction" id="satoshi-logo" class="results-logo" style="display: none;">
+            <img src="ether-logo.webp" alt="The Ether Union" id="ether-logo" class="results-logo" style="display: none;">
+            <h4 id="results-text"></h4>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

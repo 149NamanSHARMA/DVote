@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'Connection';
+    src: url('Connection-3zA2z.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cartesian';
+    src: url('Cartesian-0W5Oo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exon';
+    src: url('ExonRegular-0WjEd.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html {
+    /* ... other properties ... */
+    background: url('black-blocks.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    
+}
+
+#container {
+    width: 350px; /* Slightly wider container */
+    margin: 50px auto; /* More vertical space from the top */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark background with transparency */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* More pronounced shadow */
+    color: #ffffff; /* Light text for dark background */
+}
+
+h2 {
+    border-bottom: 1px solid #444; /* Subtle separator */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #ccc; /* Lighter text color for headings */
+    
+}
+
+input[type=text], input[type=password], button {
+    background: rgba(255, 255, 255, 0.2); /* Slight transparency to input and button backgrounds */
+    border: 1px solid #aaa; /* Softer border */
+    box-shadow: none; /* Remove any inset shadows for a flatter, cleaner look */
+    color: #ddd; /* Lighter text inside inputs and buttons */
+    font-family: 'Cartesian', sans-serif;
+}
+
+input[type=text]::placeholder, input[type=password]::placeholder {
+    color: #bbb; /* Lighter placeholder text */
+    font-family: 'Cartesian', sans-serif;
+}
+
+button {
+    background-color: #333; /* Dark buttons */
+    padding: 15px 20px;
+    margin-top: 10px; /* Space above the button */
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Connection', sans-serif;
+}
+
+button:hover {
+    background-color: #444; /* Slightly lighter on hover */
+    opacity: 0.8;
+}
+
+#registration-form, #login-form {
+    margin-bottom: 50px;
+}
+
+#results-display {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+#results-display h2 {
+    color: #333;
+}
+
+#logo {
+    display: block;
+    max-width: 80%; /* Adjust the size as needed */
+    height: auto;
+    margin: 0 auto 50px; /* Adds space below the logo */
+}
+
+.party-logo {
+    width: 80px; /* Adjust width as needed */
+    height: 80px; /* Adjust height as needed */
+    margin-right: 15px; /* Space between the logo and the text */
+}
+
+.party-label {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: flex-start; /* Aligns content to the start of the label */
+    padding: 15px;
+    margin-bottom: 15px; /* Adds space between the labels */
+    border: 1px solid #ccc; /* Just an example, style as you like */
+    border-radius: 5px; /* Rounded corners for the label */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth background color transition */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for labels */
+    margin: 10px 0; /* Add some vertical space between options */
+}
+
+.party-label span {
+    font-size: 1.2em; /* Larger font size for party names */
+    margin-left: 10px; /* Space between logo and text */
+}
+
+/* Style for when the radio button is checked */
+input[type="radio"]:checked + .party-label {
+    background-color: rgba(0, 150, 0, 0.3); /* Highlight color for selected option */
+}
+
+#timer-display, #results-display {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background with transparency for timer and results */
+    color: #ddd; /* Light text for visibility */
+    padding: 15px;
+    margin-top: 25px; /* Space above the timer and results display */
+    border-radius: 10px;
+    }
+    
+    #timer-display h2, #results-display h2 {
+    margin-top: 0; /* Aligns title to the top of its container */
+    color: #4CAF50; /* A hint of color for the titles */
+    }
+
+/* Hover effect */
+button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    
+    button:hover {
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.results-logo {
+    width: 150px; /* Increase the width to make the logo bigger */
+    height: auto; /* Keep the height auto to maintain aspect ratio */
+    margin: 20px auto; /* Adjust margin as needed */
+    display: block; /* Center the logo */
+}
+
+#results-display h2 {
+    color: #ffffff; /* Change the color to white */
+}
+
+#results-text {
+    font-family: 'Cartesian', sans-serif;
+}
+
+/* #timer-text {
+    font-family: 'Cartesian', sans-serif;
+} */
