@@ -8,7 +8,7 @@ actor DVote {
     type User = {
         username: Text;
         password: Text;
-    };
+    }
 
     // HashMaps for users and votes
     let users = HashMap.HashMap<Text, User>(1, Text.equal, Text.hash);
@@ -26,7 +26,7 @@ actor DVote {
         } else {
             false
         }
-    };
+    }
 
     // Function to login a user
     public func loginUser(username: Text, password: Text) : async Bool {
@@ -34,7 +34,7 @@ actor DVote {
         case (null) { return false; };
         case (?user) { return user.password == password; };
         };
-    };
+    }
 
 
     // Function to cast a vote
@@ -58,7 +58,7 @@ actor DVote {
                 false 
             };
         }
-    };
+    }
 
     // Function to get voting results
     public func getResults() : async Text {
